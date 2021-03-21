@@ -3,13 +3,13 @@ package com.meritamerica.assignment4;
 public class SavingAccount extends AccountHolder {
 
 	double openingBalance;
-	SavingAccount savingAccount;
+	String savingAccount;
 	
 	public void CheckingAccount() {
 		
 	}
 	
-	public void CheckingAccount(double openingBalance, SavingAccount savingAccount ) {
+	public void CheckingAccount(double openingBalance, String savingAccount ) {
 		
 		this.openingBalance = openingBalance;
 		this.savingAccount = savingAccount;
@@ -24,16 +24,16 @@ public class SavingAccount extends AccountHolder {
 		this.openingBalance = openingBalance;
 	}
 
-	public SavingAccount getCheckingAccount() {
+	public String getCheckingAccount() {
 		return savingAccount;
 	}
 
-	public void setCheckingAccount(SavingAccount savingAccount) {
+	public void setCheckingAccount(String savingAccount) {
 		this.savingAccount = savingAccount;
 	}
 	// down below is the method write in the code to connect with those exception class
 	
-	SavingAccount addSavingAccount(double openingBalance) throws ExceedsCombinedBalanceLimitException{
+	String addSavingAccount(double openingBalance) throws ExceedsCombinedBalanceLimitException{
 		return savingAccount;
 		
 // this method is for if combined balance limit exceed also add a deposit 

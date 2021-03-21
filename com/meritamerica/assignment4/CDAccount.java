@@ -6,7 +6,7 @@ public class CDAccount extends AccountHolder{
 
 	
 	    public CDAccount(String string, String string2, String string3, String string4) {
-		super(string, string2, string3, string4);
+		//super(string, string2, string3, string4);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -52,8 +52,10 @@ public class CDAccount extends AccountHolder{
 
 
 		
-		CDAccount addCDAccount(CDOffering offering, double openingBalance) {
-			return addCDAccount(null, 0);// THE RETURN MIGHT CHANGE
+		void addCDAccount(CDOffering offering, double openingBalance) {
+			
+			// It is void return for now
+			// THE RETURN MIGHT CHANGE
 			
 	// this method is for if combined balance limit exceed also add a deposit 
 			
